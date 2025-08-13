@@ -1,0 +1,33 @@
+group 'com.example.cookie_sync'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.0'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    namespace "com.example.cookie_sync"
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 16
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
+}
